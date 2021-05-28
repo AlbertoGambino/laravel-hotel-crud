@@ -22,7 +22,18 @@
         <label for="ral">Ral</label>
         <input id="ral" type="text" name="ral" value="{{ $employee -> ral}}">
 
-        <input type="submit" value="EDIT">
+        <input type="submit" value="UPDATE">
+
+        @if ($errors->any())
+        <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+        </div>
+@endif
+
     </form>
 
 

@@ -33,7 +33,7 @@ class MainController extends Controller
 
             'firstname' => 'required|string',
             'lastname' => 'required|string',
-            'rol' => 'required|string',
+            'role' => 'required|string',
             'ral' => 'required|integer',
         ]);
 
@@ -56,7 +56,7 @@ class MainController extends Controller
 
             'firstname' => 'required|string',
             'lastname' => 'required|string',
-            'rol' => 'required|string',
+            'role' => 'required|string',
             'ral' => 'required|integer',
         ]);
 

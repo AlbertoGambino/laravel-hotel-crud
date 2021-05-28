@@ -23,6 +23,17 @@
         <input id="ral" type="text" name="ral">
 
         <input type="submit" value="CREATE">
+
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+    </div>
+@endif
+
     </form>
 
 

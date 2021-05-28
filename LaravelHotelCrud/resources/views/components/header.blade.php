@@ -4,7 +4,7 @@
 
         <a href="{{route('home')}}">
 
-            header
+            home
 
         </a>
 
